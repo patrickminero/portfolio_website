@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import "components/animations.css";
+@import "components/buttons.css";
 /*
 
 @layer components {

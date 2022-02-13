@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   root 'profiles#home'
   get 'profiles/resume', to: 'profiles#resume'
   get 'profiles/projects', to: 'profiles#projects'
-  get 'profiles/contact', to: 'profiles#contact'
+
+  resources :messages
 end
