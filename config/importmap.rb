@@ -6,3 +6,5 @@ pin "@hotwired/stimulus", to: "https://ga.jspm.io/npm:@hotwired/stimulus@3.0.1/d
 pin "@hotwired/stimulus-loading", to: "stimulus-loading.js", preload: true
 pin_all_from "app/javascript/controllers", under: "controllers"
 pin "tailwindcss-stimulus-components", to: "https://ga.jspm.io/npm:tailwindcss-stimulus-components@3.0.3/dist/tailwindcss-stimulus-components.modern.js"
+pin "swup", to: "https://ga.jspm.io/npm:swup@2.0.14/lib/index.js"
+pin "delegate", to: "https://ga.jspm.io/npm:delegate@3.1.3/src/delegate.js"

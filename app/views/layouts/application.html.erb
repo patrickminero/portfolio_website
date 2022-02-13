@@ -8,12 +8,17 @@
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
-    <main class="w-full h-screen">
-      <%= yield %>
+    <main>
+      <%= render partial: 'shared/navbar' %>
+      <div id="swup" class="transition-fade w-full h-screen">
+        <%= yield %>
+      </div>
+      <%= render partial: 'shared/footer' %>
     </main>
   </body>
 </html>
