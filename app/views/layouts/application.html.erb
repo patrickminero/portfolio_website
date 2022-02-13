@@ -10,15 +10,16 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
     <%= javascript_importmap_tags %>
+    <script src="https://kit.fontawesome.com/8631d0c616.js" crossorigin="anonymous"></script>
   </head>
 
-  <body>
-    <main>
-      <%= render partial: 'shared/navbar' %>
-      <div id="swup" class="transition-fade w-full h-screen">
+  <body class="w-full h-screen flex flex-col justify-between">
+    <%= render partial: 'shared/navbar' %>
+    <main class="w-4/5 flex justify-center">
+      <div id="swup" class="transition-fade">
         <%= yield %>
       </div>
-      <%= render partial: 'shared/footer' %>
     </main>
+    <%= render partial: 'shared/footer' %>
   </body>
 </html>
