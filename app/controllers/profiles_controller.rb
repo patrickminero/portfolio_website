@@ -13,6 +13,9 @@ class ProfilesController < ApplicationController
   def contact
   end
 
+  def about
+  end
+
   private
 
   def get_profile
