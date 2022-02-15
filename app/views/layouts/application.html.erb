@@ -13,9 +13,9 @@
     <script src="https://kit.fontawesome.com/8631d0c616.js" crossorigin="anonymous"></script>
   </head>
 
-  <body class="w-full h-screen flex flex-col justify-between">
+  <body class="w-full h-screen flex flex-col justify-between items-center">
     <%= render partial: 'shared/navbar' %>
-    <main class="w-70% mx-auto">
+    <main class="w-full md:w-70%">
       <div id="swup" class="transition-fade">
         <%= yield %>
       </div>
