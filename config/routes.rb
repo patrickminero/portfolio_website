@@ -5,10 +5,9 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   root 'profiles#home'
-  get 'profiles/resume', to: 'profiles#resume'
+  get 'profiles/work', to: 'profiles#work'
   get 'profiles/projects', to: 'profiles#projects'
   get 'profiles/about', to: 'profiles#about'
 
   resources :messages
-  resource :download_resume
 end

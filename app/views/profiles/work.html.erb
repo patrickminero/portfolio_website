@@ -3,12 +3,12 @@
   <div class="flex flex-col-reverse lg:flex-row items-center gap-20 md:justify-around w-full">
     <div class="flex flex-col items-center justify-between h-48 w-full">
       <h1 class="text-xl font-semibold">Download</h1>
-      <%= link_to download_resume_path, target: '_blank' do %>
-        <%= image_tag 'resume_download.svg' %>
+      <a href="app/assets/files/Patrick_Minero_Resume.pdf" download>
+        <%= image_tag 'resume_download.svg', alt: 'resume icon' %>
         <span>Resume PDF</span>
-      <% end %>
+      </a>
     </div>
-    <div class="flex flex-col items-center gap-12 w-full md:overflow-y-scroll h-160 scrollbar-hidden">
+    <div class="flex flex-col items-center gap-12 w-full md:overflow-y-scroll h-128 scrollbar-hidden">
       <div class="w-full lg:w-96 flex flex-col items-start gap-2">
         <h1 class="text-xl font-semibold">Earthster</h1>
         <div>

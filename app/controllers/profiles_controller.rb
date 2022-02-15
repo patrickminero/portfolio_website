@@ -4,7 +4,7 @@ class ProfilesController < ApplicationController
   def home
   end
 
-  def resume
+  def work
   end
 
   def projects
