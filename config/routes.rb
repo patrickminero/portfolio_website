@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get 'profiles/projects', to: 'profiles#projects'
 
   resources :messages
+  resource :download_resume
 end

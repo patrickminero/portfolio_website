@@ -1,6 +1,47 @@
-<div class="flex items-center gap-4">
-  <div class="flex flex-col gap-4">
-    <h1>Resume</h1>
-    <h2>resume content</h2>
-  <div>
+<div class="flex flex-col items-center gap-4">
+  <h1 class="text-xxl font-bold  ml-36">Work Experience</h1>
+  <div class="flex items-center justify-around w-full">
+    <div class="flex flex-col items-center justify-between h-48 w-full">
+      <h1 class="text-xl font-semibold">Downloads</h1>
+      <%= link_to download_resume_path, target: '_blank' do %>
+        <%= image_tag 'resume_download.svg' %>
+        <span>Resume PDF</span>
+      <% end %>
+    </div>
+    <div class="flex flex-col items-end gap-12 w-full overflow-y-scroll h-160 scrollbar-hidden">
+      <div class="w-96 flex flex-col items-start gap-2">
+        <h1 class="text-xl font-semibold">Earthster</h1>
+        <div>
+          <h2 class="text-lg font-semibold">Software Developer</h2>
+          <p>Continously deliver clean, well tested features interacting with various APIs for an environmental start up company helping build a MVP released fall 2021.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold">Tech stack</h3>
+          <p>Ruby | Rails | StimulusJS | Sass | D3JS | Docker</p>
+        </div>
+      </div>
+      <div class="w-96 flex flex-col items-start gap-2">
+        <h1 class="text-xl font-semibold">Self Employed</h1>
+        <div>
+          <h2 class="text-lg font-semibold">Front-end Web Developer</h2>
+          <p>Worked creating static responsive websites for small bussinesses.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold">Tech stack</h3>
+          <p>React | Sass | GSAPJS</p>
+        </div>
+      </div>
+      <div class="w-96 flex flex-col items-start gap-2">
+        <h1 class="text-xl font-semibold">Fort Point Brewery</h1>
+        <div>
+          <h2 class="text-lg font-semibold">Restaurant Supervisor</h2>
+          <ul>
+            <li>Promoted to a dual position which allowed me to be a Team Lead and apart of the service staff.</li>
+            <li>Developed and implemented team strategies to drive up sales and meet the company daily goal of USD 40 per check average.</li>
+            <li>Supported management in the service and product training of new staff members.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
