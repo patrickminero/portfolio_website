@@ -20,4 +20,4 @@ application.register('popover', Popover)
 application.register('toggle', Toggle)
 application.register('slideover', Slideover)
 
-const swup = new Swup(); // only this line when included with script tag
+//const swup = new Swup(); // only this line when included with script tag

@@ -1,37 +1,38 @@
-<div class="container mx-auto p-8"
+<div class="container bg-white mx-auto p-8 fixed md:relative z-50"
   data-controller="slideover"
   data-slideover-active-target="#slideover-target"
   data-slideover-invisible-class="-translate-x-full,opacity-0"
   data-slideover-visible-class="translate-x-0,opacity-100"
-  data-slideover-entering-class=""
+  data-slideover-entering-class="opacity-0"
   data-slideover-enter-timeout="300,300"
   data-slideover-leaving-class=""
   data-slideover-leave-timeout="300,0"
   data-action="click@window->slideover#hide"
 >
-  <div data-action="click->slideover#toggle" class="float-right md:hidden">
-    <%= image_tag 'menu.svg', class: 'w-12 h-12' %>
+  <div class="w-full flex items-center justify-between md:hidden">
+    <h1 class="text-xxl font-semibold">Patrick Minero</h1>
+    <%= image_tag 'menu.svg', class: 'w-12 h-12', data: { action:"click->slideover#toggle" } %>
   </div>
   <!-- begin sidebar/slideover -->
   <div id="sidebar">
-    <div data-slideover-target="overlay" class="fixed inset-0 flex z-40 transition-opacity ease-linear duration-300 opacity-100 hidden">
-      <%# <div class="fixed inset-0">
-        <div class="absolute inset-0 bg-gray-600 opacity-50"></div>
-      </div> %>
-      <div id="slideover-target" data-slideover-target="menu" class="relative flex-1 flex flex-col-reverse max-w-xs w-full pt-5 p-8 bg-slate-500 transition ease-in-out duration-300 transform -translate-x-full hidden">
-        <div class="absolute bottom-0 right-0 -mr-14 p-1">
-          <button data-action="click->slideover#toggle" class="flex items-center justify-center h-16 w-16 rounded-full focus:outline-none focus:bg-gray-600" aria-label="Close sidebar">
-            <svg class="h-6 w-6 text-slate-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+    <div data-slideover-target="overlay" class="fixed inset-0 flex z-50 transition-opacity ease-linear duration-300 opacity-100 hidden">
+      <div class="fixed inset-0">
+        <div class="absolute inset-0 bg-gray-600 opacity-80"></div>
+      </div>
+      <div id="slideover-target" data-slideover-target="menu" class="relative flex-1 flex flex-col-reverse max-w-xs w-full px-8 py-16 bg-gray-700 transition ease-in-out duration-300 transform -translate-x-full hidden">
+        <div class="absolute bottom-1/2 right-0 -mr-10">
+          <button data-action="click->slideover#toggle" class="flex items-center justify-center h-20 w-12 rounded-x-full focus:outline-none bg-gray-700 -ml-8 rounded-r-lg" aria-label="Close sidebar">
+            <svg class="h-6 w-6 text-white" stroke="currentColor" fill="none" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
         </div>
-        <div class="flex flex-col items-end gap-2">
-          <%= link_to 'Home', root_path, class: "font-semibold no-underline text-white", data: { action: "click->slideover#toggle" } %>
-          <%= link_to 'About', profiles_about_path, class: "font-semibold no-underline text-white", data: { action: "click->slideover#toggle" }  %>
-          <%= link_to 'Work', profiles_work_path, class: "font-semibold no-underline text-white", data: { action: "click->slideover#toggle" }  %>
-          <%# <%= link_to 'Projects', profiles_projects_path, class: "font-semibold no-underline text-white" %>
-          <%= link_to 'Contact', new_message_path, class: "font-semibold no-underline text-white", data: { action: "click->slideover#toggle" }  %>
+        <div class="flex flex-col items-end gap-4">
+          <%= link_to 'Home', root_path, class: "text-xxl font-semibold no-underline text-white", data: { action: "click->slideover#toggle" } %>
+          <%= link_to 'About', profiles_about_path, class: "text-xxl font-semibold no-underline text-white", data: { action: "click->slideover#toggle" }  %>
+          <%= link_to 'Work', profiles_work_path, class: "text-xxl font-semibold no-underline text-white", data: { action: "click->slideover#toggle" }  %>
+          <%# <%= link_to 'Projects', profiles_projects_path, class: "text-xxl font-semibold no-underline text-white" %>
+          <%= link_to 'Contact', new_message_path, class: "text-xxl font-semibold no-underline text-white", data: { action: "click->slideover#toggle" }  %>
         </div>
       </div>
     </div>
