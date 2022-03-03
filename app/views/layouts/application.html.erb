@@ -13,14 +13,16 @@
     <script src="https://kit.fontawesome.com/8631d0c616.js" crossorigin="anonymous"></script>
   </head>
 
-  <body class="w-full h-screen flex flex-col justify-between items-center">
-    <%= render partial: 'shared/navbar' %>
-    <%= render partial: 'shared/mobile_menu' %>
-    <main class="w-full md:w-70%">
-      <div id="swup" class="transition-fade pt-20">
-        <%= yield %>
-      </div>
-    </main>
-    <%= render partial: 'shared/footer' %>
+  <body class="h-screen flex justify-center items-center bg-gray-800 font-mono">
+    <div class="w-90% h-90% flex flex-col justify-between bg-white rounded-lg">
+      <%= render partial: 'shared/navbar' %>
+      <%= render partial: 'shared/mobile_menu' %>
+      <main class="w-full md:w-90% mx-auto">
+        <div id="swup" class="transition-fade pt-20 md:pt-0">
+          <%= yield %>
+        </div>
+      </main>
+      <%= render partial: 'shared/footer' %>
+    </div>
   </body>
 </html>
