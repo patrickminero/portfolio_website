@@ -5,6 +5,7 @@
       <%= render partial: 'shared/form_errors', alert: alert %>
     <% end %>
     <%= form_for @message, html: { class: 'w-full flex flex-col items-start gap-8' } do |form| %>
+      <%= form.invisible_captcha :subtitle %>
       <div class="flex flex-col w-full">
         <%= form.label :name %>
         <%= form.text_field :name, class: 'rounded', placeholder: 'Enter your name' %>
