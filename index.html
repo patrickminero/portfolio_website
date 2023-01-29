@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patrick Minero | Software Developer</title>
+  <script src="https://kit.fontawesome.com/8631d0c616.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen flex justify-center items-center bg-gray-800 font-mono  scrollbar-hidden">
+  <div
+    class="container h-full md:h-4/5 overflow-y-scroll flex flex-col justify-between bg-white rounded scroll-smooth scrollbar-hidden">
+    <div
+      class="top-0 flex container w-full h-16 fixed md:top-16 items-center justify-between border-b bg-white rounded z-50">
+      <h1 class="text-xl font-semibold pl-4"><a href="#home">Patrick Minero</a></h1>
+      <div class="flex items-center gap-2 divide-x-2">
+        <a class="bg-white inline-block py-2 px-4 hover:text-blue-500 font-semibold no-underline text-gray-600"
+          href="#about">About</a>
+        <a class="bg-white inline-block py-2 px-4 hover:text-blue-500 font-semibold no-underline text-gray-600 rounded"
+          href="#work">Work</a>
+        <a class="bg-white inline-block py-2 px-4 hover:text-blue-500 font-semibold no-underline text-gray-600 rounded"
+          href="#contact">Contact</a>
+      </div>
+    </div>
+    <div id="home"
+      class="w-full h-screen md:h-full flex flex-col md:flex-row items-center justify-center gap-4 px-8 md:p-0 mt-20 z-1">
+      <img
+        src='https://media.licdn.com/dms/image/C4D03AQGIZE7q5T2wug/profile-displayphoto-shrink_400_400/0/1609351788691?e=1680739200&v=beta&t=aMZq-OKVSsIQ8oIeb3s82kj0rdIlE2T-In_ymgHlJ7E'
+        alt="patrick minero photo" class="w-64 h-64 rounded-full object-cover">
+      <div class="flex flex-col gap-4">
+        <h1 class="text-xxl font-bold text-gray-600 text-center md:text-left">
+          Patrick Minero
+        </h1>
+        <h2 class="text-xl font-semibold text-gray-500 text-center md:text-left">
+          Ruby Software Developer
+        </h2>
+        <div>
+        </div>
+      </div>
+    </div>
+    <div id="about" class="flex flex-col items-center justify-center md:justify-start gap-8 relative p-8  z-10">
+      <h2 class="text-xxl font-semibold text-left w-full">A little bit about me</h2>
+      <div class="flex flex-col gap-2">
+        <p class="text-lg">If I had to describe myself in one word it would be "Perseverance".</p>
+        <p class="text-lg">Ten years of working in retail and foodservice taught me to always strive for more,
+          keep
+          learning, and give my best in every role I worked. I developed great customer service, team
+          management,
+          and business management skills, along with a strong work ethic which helped me get management roles in
+          all
+          the companies I worked for.</p>
+        <p class="text-lg">I learned front end development (HTML, CSS, JavaScript) back in 2019 when I moved to
+          Spain, then in the fall of 2020 I enrolled in Le Wagon Ruby | Rails Fullstack Development Boot camp
+          where
+          I learned fundamental skills like Test-Driven Development, Object-Oriented Programming, version
+          management
+          and more.</p>
+        <p class="text-lg">Now I work for an environmental start-up where I helped deliver an MVP for a carbon
+          footprint SaaS app.</p>
+      </div>
+    </div>
+    <div id="work" class="flex flex-col gap-4 p-8 z-10">
+      <h1 class="text-xxl font-bold">Work Experience</h1>
+      <div class="flex flex-col-reverse lg:flex-row gap-20 w-full">
+        <div class="flex flex-col gap-12 w-full md:overflow-y-scroll md:h-128">
+          <div class="flex flex-col items-start gap-2">
+            <h1 class="text-xl font-semibold">Flywire</h1>
+            <div>
+              <h2 class="text-lg font-semibold">Backend Software Developer</h2>
+              <p>Flywire (Nasdaq: FLYW) is a global payments enablement and software
+                company. Flywire combines its proprietary global payments network,
+                next-gen payments platform and vertical-specific software to deliver the most important and complex
+                payments for clients and their customers.</p>
+
+              <p>Flywire leverages its vertical-specific software and payments technology to
+                deeply embed within the existing A/R workflows for its clients across the
+                education, healthcare and travel vertical markets, as well as in key B2B
+                industries. Flywire also integrates with leading ERP systems, so
+                organizations can optimize the payment experience for their customers
+                while eliminating operational challenges.</p>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold">Tech stack</h3>
+              <p>Ruby | Sinatra | Redis | AWS | RabbitMQ | Docker</p>
+            </div>
+          </div>
+          <div class="flex flex-col items-start gap-2">
+            <h1 class="text-xl font-semibold">Secture</h1>
+            <div>
+              <h2 class="text-lg font-semibold">Ruby Software Developer</h2>
+              <p>Software development consultant company</p>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold">Tech stack</h3>
+              <p>Ruby | Sinatra | Redis | AWS | RabbitMQ | Docker</p>
+            </div>
+          </div>
+          <div class="flex flex-col items-start gap-2">
+            <h1 class="text-xl font-semibold">Earthster</h1>
+            <div>
+              <h2 class="text-lg font-semibold">Software Developer</h2>
+              <p>Continously deliver clean, well tested features interacting with various APIs for an
+                environmental start up company helping build a MVP released fall 2021.</p>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold">Tech stack</h3>
+              <p>Ruby | Rails | StimulusJS | Sass | D3JS | Docker</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="flex flex-col md:flex-row md:items-center w-full md:h-24 justify-around md:border-t-2">
+      <div class="h-full md:w-1/3 px-8 flex flex-col justify-center around-center">
+        <h3 class="font-semibold text-lg">Phone</h3>
+        <p>+34 677 779 709
+      </div>
+      <div class="h-full md:w-1/3 px-8 border-0 md:border-l-2 flex flex-col justify-center around-center">
+        <h3 class="font-semibold text-lg">Email</h3>
+        <p>patrick.minero@icloud.com</p>
+      </div>
+      <div class="h-full md:w-1/3 px-8 border-0 md:border-l-2 flex flex-col justify-center around-center">
+        <h3 class="font-semibold text-lg">Reach out</h3>
+        <div class="flex md:items-center flex-row gap-8">
+          <a src='https://www.linkedin.com/in/patrick-minero-valencia/' class='w-8 h-8' target='_blank'>
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a src='https://github.com/patrickminero' class='w-8 h-8' target='_blank'>
+            <i class="fa fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
