@@ -5,13 +5,86 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Patrick Minero - Results-driven Ruby backend and full-stack developer with expertise in crafting scalable solutions. Contact me at patrick.minero@icloud.com">
-  <meta property="og:title" content="Patrick Minero | Software Developer">
-  <meta property="og:description"
-    content="Results-driven Ruby backend and full-stack developer with expertise in crafting scalable solutions. Contact me at patrick.minero@icloud.com">
-  <meta property="og:url" content="https://patrickminero.github.io/portfolio_website/">
+    content="Patrick Minero - Backend and full-stack software developer in Madrid, Spain specializing in Ruby on Rails, React, Next.js, AWS, and AI-accelerated engineering. Contact patrick.minero@icloud.com.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="canonical" href="https://patrickminero.github.io/portfolio_website/">
 
-  <title>Patrick Minero | Software Developer</title>
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Patrick Minero">
+  <meta property="og:title" content="Patrick Minero | Software Developer in Madrid, Spain">
+  <meta property="og:description"
+    content="Backend and full-stack software developer based in Madrid, Spain. Building resilient Ruby/Rails backends, React & Next.js applications, and cloud infrastructure at Flywire.">
+  <meta property="og:url" content="https://patrickminero.github.io/portfolio_website/">
+  <meta property="profile:first_name" content="Patrick">
+  <meta property="profile:last_name" content="Minero">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Patrick Minero | Software Developer in Madrid, Spain">
+  <meta name="twitter:description"
+    content="Backend and full-stack software developer in Madrid, Spain specializing in Ruby on Rails, React, Next.js, AWS, and scalable payment systems.">
+
+  <title>Patrick Minero | Software Developer in Madrid, Spain</title>
+
+  <!-- JSON-LD Structured Data for SEO & Answer Engine Optimization (AEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "dateModified": "2026-11-19",
+    "url": "https://patrickminero.github.io/portfolio_website/",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Patrick Minero",
+      "jobTitle": "Backend & Full-Stack Software Developer",
+      "description": "Results-driven backend and full-stack software developer based in Madrid, Spain specializing in Ruby, Ruby on Rails, React, Next.js, AWS, Docker, and hardened CI/CD infrastructure.",
+      "email": "mailto:patrick.minero@icloud.com",
+      "url": "https://patrickminero.github.io/portfolio_website/",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Madrid",
+        "addressRegion": "Community of Madrid",
+        "addressCountry": "ES"
+      },
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Madrid, Spain"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Flywire"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Le Wagon"
+      },
+      "knowsAbout": [
+        "Ruby",
+        "Ruby on Rails",
+        "React",
+        "Next.js",
+        "Vue.js",
+        "Docker",
+        "AWS",
+        "AWS Bedrock",
+        "Claude Code",
+        "GitHub Copilot",
+        "OpenAI Codex",
+        "Terraform",
+        "CI/CD",
+        "Distributed Systems",
+        "PostgreSQL",
+        "Sidekiq",
+        "AMQP"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/patrick-minero-valencia/",
+        "https://github.com/patrickminero"
+      ]
+    }
+  }
+  </script>
 
   <!-- System-Aware Theme Initialization (prevents FOUC) -->
   <script>
@@ -125,15 +198,18 @@
       </a>
 
       <!-- Desktop Navigation -->
-      <nav aria-label="Primary Navigation" class="hidden md:flex items-center gap-8">
+      <nav aria-label="Primary Navigation" class="hidden md:flex items-center gap-7">
         <a href="#about-me" data-nav="about-me" class="nav-link font-mono text-xs uppercase tracking-wider text-paper-muted dark:text-obsidian-muted hover:text-paper-ink dark:hover:text-obsidian-ink transition-colors">
           01 / About
         </a>
+        <a href="#tech-stack" data-nav="tech-stack" class="nav-link font-mono text-xs uppercase tracking-wider text-paper-muted dark:text-obsidian-muted hover:text-paper-ink dark:hover:text-obsidian-ink transition-colors">
+          02 / Stack
+        </a>
         <a href="#work-experience" data-nav="work-experience" class="nav-link font-mono text-xs uppercase tracking-wider text-paper-muted dark:text-obsidian-muted hover:text-paper-ink dark:hover:text-obsidian-ink transition-colors">
-          02 / Experience
+          03 / Experience
         </a>
         <a href="#contact-info" data-nav="contact-info" class="nav-link font-mono text-xs uppercase tracking-wider text-paper-muted dark:text-obsidian-muted hover:text-paper-ink dark:hover:text-obsidian-ink transition-colors">
-          03 / Contact
+          04 / Contact
         </a>
       </nav>
 
@@ -169,8 +245,9 @@
     <!-- Mobile Navigation Drawer -->
     <div id="mobile-menu" class="hidden md:hidden border-t border-paper-line dark:border-obsidian-line bg-paper-bg dark:bg-obsidian-bg px-5 py-4 space-y-3">
       <a href="#about-me" class="mobile-link block font-mono text-xs uppercase tracking-wider py-2 text-paper-muted dark:text-obsidian-muted hover:text-paper-ink dark:hover:text-obsidian-ink">01 / About</a>
-      <a href="#work-experience" class="mobile-link block font-mono text-xs uppercase tracking-wider py-2 text-paper-muted dark:text-obsidian-muted hover:text-paper-ink dark:hover:text-obsidian-ink">02 / Experience</a>
-      <a href="#contact-info" class="mobile-link block font-mono text-xs uppercase tracking-wider py-2 text-paper-muted dark:text-obsidian-muted hover:text-paper-ink dark:hover:text-obsidian-ink">03 / Contact</a>
+      <a href="#tech-stack" class="mobile-link block font-mono text-xs uppercase tracking-wider py-2 text-paper-muted dark:text-obsidian-muted hover:text-paper-ink dark:hover:text-obsidian-ink">02 / Stack</a>
+      <a href="#work-experience" class="mobile-link block font-mono text-xs uppercase tracking-wider py-2 text-paper-muted dark:text-obsidian-muted hover:text-paper-ink dark:hover:text-obsidian-ink">03 / Experience</a>
+      <a href="#contact-info" class="mobile-link block font-mono text-xs uppercase tracking-wider py-2 text-paper-muted dark:text-obsidian-muted hover:text-paper-ink dark:hover:text-obsidian-ink">04 / Contact</a>
     </div>
   </header>
 
@@ -182,10 +259,10 @@
       <div class="flex flex-wrap items-center justify-between gap-4 pb-8 sm:pb-12">
         <div class="inline-flex items-center gap-2.5 font-mono text-xs uppercase tracking-widest text-paper-muted dark:text-obsidian-muted">
           <span class="inline-block w-2 h-2 rounded-full bg-paper-accent dark:bg-obsidian-accent"></span>
-          <span>Backend &amp; Full-Stack Engineer &mdash; Currently @ Flywire</span>
+          <span>Madrid, Spain &middot; Backend &amp; Full-Stack Engineer &mdash; Currently @ Flywire</span>
         </div>
         <span class="font-mono text-xs text-paper-muted dark:text-obsidian-muted">
-          Ruby on Rails &middot; React / Next.js &middot; Cloud
+          Ruby on Rails &middot; React / Next.js &middot; Cloud &amp; AI
         </span>
       </div>
 
@@ -202,7 +279,7 @@
       <div class="mt-10 sm:mt-14 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-end">
         <div class="lg:col-span-7">
           <p class="text-lg sm:text-xl text-paper-muted dark:text-obsidian-muted leading-relaxed max-w-2xl">
-            I&apos;m <strong class="font-semibold text-paper-ink dark:text-obsidian-ink">Patrick Minero</strong>—a results-driven software developer specializing in resilient Ruby backends, React &amp; Next.js frontends, and hardened CI/CD infrastructure that turns legacy systems into high-velocity products.
+            I&apos;m <strong class="font-semibold text-paper-ink dark:text-obsidian-ink">Patrick Minero</strong>—a results-driven software developer based in <strong class="font-semibold text-paper-ink dark:text-obsidian-ink">Madrid, Spain</strong>, specializing in resilient Ruby backends, React &amp; Next.js frontends, and hardened CI/CD infrastructure that turns legacy systems into high-velocity products.
           </p>
         </div>
 
@@ -238,15 +315,35 @@
           </h2>
           <div class="space-y-4 text-base sm:text-[17px] text-paper-muted dark:text-obsidian-muted leading-relaxed pt-2">
             <p>
-              Most recently, I returned to <span class="text-paper-ink dark:text-obsidian-ink font-medium">Flywire&apos;s Network Services team</span>—rejoining a high-trust engineering organization to build resilient cross-border payment infrastructure and global partner integrations. Prior to returning, I transitioned into a full-stack role at <span class="text-paper-ink dark:text-obsidian-ink font-medium">The Knot Worldwide</span>, modernizing legacy Ruby/Rails systems, migrating monoliths to React/Next.js, dockerizing environments, and hardening CI/CD pipelines.
+              Based in <span class="text-paper-ink dark:text-obsidian-ink font-medium">Madrid, Spain</span>, I most recently returned to <span class="text-paper-ink dark:text-obsidian-ink font-medium">Flywire&apos;s Network Services team</span> (Jan 2026 &ndash; Present)—rejoining a high-trust engineering organization to build resilient cross-border payment infrastructure and global partner integrations. Prior to returning, I spent over two years in a full-stack role at <span class="text-paper-ink dark:text-obsidian-ink font-medium">The Knot Worldwide</span> (Sep 2023 &ndash; Dec 2025), modernizing legacy Ruby/Rails systems, migrating monoliths to React/Next.js, dockerizing environments, and hardening CI/CD pipelines.
             </p>
             <p>
-              With a foundation in full-stack web development from <span class="text-paper-ink dark:text-obsidian-ink font-medium">Le Wagon</span> and certifications in modern technologies like React and Vue.js, I focus on creating scalable, secure, and well-tested solutions. Motivated by collaboration and innovation, I thrive on building impactful products while continuously evolving as an engineer.
+              With a foundation in full-stack web development from <span class="text-paper-ink dark:text-obsidian-ink font-medium">Le Wagon</span> and certifications in modern technologies like React and Vue.js, I focus on creating scalable, secure, and well-tested solutions—integrating AI-assisted workflows to ship higher-quality software faster.
             </p>
           </div>
 
+          <!-- Single Unified "At a Glance" Definition List (AEO Entity Summary) -->
+          <dl class="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4 border-t border-paper-line dark:border-obsidian-line text-sm">
+            <div>
+              <dt class="font-mono text-[11px] uppercase tracking-wider text-paper-muted dark:text-obsidian-muted">Current Role</dt>
+              <dd class="mt-1 font-medium text-paper-ink dark:text-obsidian-ink">Backend Engineer @ Flywire</dd>
+            </div>
+            <div>
+              <dt class="font-mono text-[11px] uppercase tracking-wider text-paper-muted dark:text-obsidian-muted">Location</dt>
+              <dd class="mt-1 font-medium text-paper-ink dark:text-obsidian-ink">Madrid, Spain (Remote / Hybrid)</dd>
+            </div>
+            <div>
+              <dt class="font-mono text-[11px] uppercase tracking-wider text-paper-muted dark:text-obsidian-muted">Core Focus</dt>
+              <dd class="mt-1 font-medium text-paper-ink dark:text-obsidian-ink">Distributed Backends, Ruby/Rails &amp; Next.js</dd>
+            </div>
+            <div>
+              <dt class="font-mono text-[11px] uppercase tracking-wider text-paper-muted dark:text-obsidian-muted">Education &amp; Certs</dt>
+              <dd class="mt-1 font-medium text-paper-ink dark:text-obsidian-ink">Le Wagon &middot; React &amp; Vue.js</dd>
+            </div>
+          </dl>
+
           <!-- Minimal Social Row -->
-          <div class="pt-4 flex flex-wrap items-center gap-6 font-mono text-xs uppercase tracking-wider">
+          <div class="pt-2 flex flex-wrap items-center gap-6 font-mono text-xs uppercase tracking-wider">
             <a href="https://github.com/patrickminero" target="_blank" rel="noopener noreferrer"
                class="inline-flex items-center gap-1.5 text-paper-ink dark:text-obsidian-ink hover:text-paper-accent dark:hover:text-obsidian-accent underline underline-offset-4 transition-colors">
               <span>GitHub</span>
@@ -326,14 +423,100 @@
       </div>
     </section>
 
-    <!-- ==================== 02 / WORK EXPERIENCE EDITORIAL INDEX ==================== -->
+    <!-- ==================== 02 / CORE TECHNOLOGIES & DOMAINS ==================== -->
+    <section id="tech-stack" class="py-20 sm:py-28 border-b border-paper-line dark:border-obsidian-line scroll-mt-16">
+      <div class="reveal space-y-12">
+        <div class="space-y-3 max-w-2xl">
+          <div class="font-mono text-xs uppercase tracking-widest text-paper-accent dark:text-obsidian-accent">
+            02 / Technical Stack
+          </div>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold tracking-tight text-paper-ink dark:text-obsidian-ink">
+            Core Technologies &amp; Domains
+          </h2>
+          <p class="text-base sm:text-lg text-paper-muted dark:text-obsidian-muted">
+            Production-tested tools for high-throughput financial APIs, modern React interfaces, cloud infrastructure, and AI-accelerated engineering.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Column 1: Backend & Distributed Systems -->
+          <div class="p-6 sm:p-8 rounded-xl bg-paper-surface/70 dark:bg-obsidian-surface/70 border border-paper-line dark:border-obsidian-line space-y-4">
+            <span class="font-mono text-[11px] uppercase tracking-wider text-paper-accent dark:text-obsidian-accent">
+              01 &middot; Backend &amp; Distributed Systems
+            </span>
+            <h3 class="font-display text-xl font-bold text-paper-ink dark:text-obsidian-ink">
+              Resilient APIs &amp; Messaging
+            </h3>
+            <p class="text-sm text-paper-muted dark:text-obsidian-muted leading-relaxed">
+              Designing fault-tolerant payment integrations, background job pipelines, and relational data models.
+            </p>
+            <div class="pt-2 flex flex-wrap gap-1.5">
+              <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-bg dark:bg-obsidian-bg text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">Ruby</span>
+              <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-bg dark:bg-obsidian-bg text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">Ruby on Rails</span>
+              <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-bg dark:bg-obsidian-bg text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">Sinatra</span>
+              <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-bg dark:bg-obsidian-bg text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">Sidekiq</span>
+              <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-bg dark:bg-obsidian-bg text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">AMQP</span>
+              <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-bg dark:bg-obsidian-bg text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">PostgreSQL</span>
+              <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-bg dark:bg-obsidian-bg text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">Elasticsearch</span>
+            </div>
+          </div>
+
+          <!-- Column 2: Frontend & Design Systems -->
+          <div class="p-6 sm:p-8 rounded-xl bg-paper-surface/70 dark:bg-obsidian-surface/70 border border-paper-line dark:border-obsidian-line space-y-4">
+            <span class="font-mono text-[11px] uppercase tracking-wider text-paper-accent dark:text-obsidian-accent">
+              02 &middot; Frontend &amp; Design Systems
+            </span>
+            <h3 class="font-display text-xl font-bold text-paper-ink dark:text-obsidian-ink">
+              Fast, Modular Web Apps
+            </h3>
+            <p class="text-sm text-paper-muted dark:text-obsidian-muted leading-relaxed">
+              Migrating legacy views to Next.js and building shared UI component monorepos for rapid product iteration.
+            </p>
+            <div class="pt-2 flex flex-wrap gap-1.5">
+              <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-bg dark:bg-obsidian-bg text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">ReactJS</span>
+              <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-bg dark:bg-obsidian-bg text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">Next.js</span>
+              <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-bg dark:bg-obsidian-bg text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">Vue.js</span>
+              <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-bg dark:bg-obsidian-bg text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">StimulusJS</span>
+              <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-bg dark:bg-obsidian-bg text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">Tailwind CSS</span>
+              <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-bg dark:bg-obsidian-bg text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">D3.js</span>
+              <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-bg dark:bg-obsidian-bg text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">UI Monorepos</span>
+            </div>
+          </div>
+
+          <!-- Column 3: Cloud, DevOps & AI Tooling -->
+          <div class="p-6 sm:p-8 rounded-xl bg-paper-surface/70 dark:bg-obsidian-surface/70 border border-paper-line dark:border-obsidian-line space-y-4">
+            <span class="font-mono text-[11px] uppercase tracking-wider text-paper-accent dark:text-obsidian-accent">
+              03 &middot; Cloud, DevOps &amp; AI Tooling
+            </span>
+            <h3 class="font-display text-xl font-bold text-paper-ink dark:text-obsidian-ink">
+              Infrastructure &amp; AI Workflows
+            </h3>
+            <p class="text-sm text-paper-muted dark:text-obsidian-muted leading-relaxed">
+              Containerizing applications, securing CI/CD pipelines, and integrating agentic AI tools into daily development.
+            </p>
+            <div class="pt-2 flex flex-wrap gap-1.5">
+              <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-bg dark:bg-obsidian-bg text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">AWS</span>
+              <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-bg dark:bg-obsidian-bg text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">AWS Bedrock</span>
+              <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-bg dark:bg-obsidian-bg text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">Claude Code</span>
+              <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-bg dark:bg-obsidian-bg text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">GitHub Copilot</span>
+              <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-bg dark:bg-obsidian-bg text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">OpenAI Codex</span>
+              <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-bg dark:bg-obsidian-bg text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">Docker</span>
+              <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-bg dark:bg-obsidian-bg text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">Terraform</span>
+              <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-bg dark:bg-obsidian-bg text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">Jenkins &amp; GitLab CI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 03 / WORK EXPERIENCE EDITORIAL INDEX ==================== -->
     <section id="work-experience" class="py-20 sm:py-28 border-b border-paper-line dark:border-obsidian-line scroll-mt-16">
       <div class="reveal">
         <!-- Section Header + Minimalist Filter Bar -->
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12 border-b border-paper-line dark:border-obsidian-line">
           <div class="space-y-3">
             <div class="font-mono text-xs uppercase tracking-widest text-paper-accent dark:text-obsidian-accent">
-              02 / Selected Experience
+              03 / Selected Experience
             </div>
             <h2 class="font-display text-3xl sm:text-4xl font-bold tracking-tight text-paper-ink dark:text-obsidian-ink">
               Work History
@@ -395,6 +578,10 @@
                 </li>
                 <li class="flex items-start gap-3">
                   <span class="font-mono text-xs text-paper-accent dark:text-obsidian-accent mt-1">&mdash;</span>
+                  <span>Leveraging Claude Code and AWS Bedrock to accelerate backend service refactoring, architectural exploration, and automated test generation.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="font-mono text-xs text-paper-accent dark:text-obsidian-accent mt-1">&mdash;</span>
                   <span>Driving service observability, automated testing standards, and cloud infrastructure resilience.</span>
                 </li>
               </ul>
@@ -403,6 +590,8 @@
                 <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-surface dark:bg-obsidian-surface text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">Ruby</span>
                 <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-surface dark:bg-obsidian-surface text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">Ruby on Rails</span>
                 <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-surface dark:bg-obsidian-surface text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">Sinatra</span>
+                <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-surface dark:bg-obsidian-surface text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">Claude Code</span>
+                <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-surface dark:bg-obsidian-surface text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">AWS Bedrock</span>
                 <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-surface dark:bg-obsidian-surface text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">AMQP</span>
                 <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-surface dark:bg-obsidian-surface text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">Sidekiq</span>
                 <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-surface dark:bg-obsidian-surface text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">AWS</span>
@@ -455,6 +644,10 @@
                   <span class="font-mono text-xs text-paper-accent dark:text-obsidian-accent mt-1">&mdash;</span>
                   <span>Built and led a shared UI components monorepo to standardize UI across multiple applications</span>
                 </li>
+                <li class="flex items-start gap-3">
+                  <span class="font-mono text-xs text-paper-accent dark:text-obsidian-accent mt-1">&mdash;</span>
+                  <span>Adopted GitHub Copilot and OpenAI Codex to accelerate feature scaffolding, code reviews, and unit test coverage</span>
+                </li>
               </ul>
 
               <div class="pt-2 flex flex-wrap gap-1.5">
@@ -462,6 +655,8 @@
                 <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-surface dark:bg-obsidian-surface text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">Ruby on Rails</span>
                 <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-surface dark:bg-obsidian-surface text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">NextJS</span>
                 <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-surface dark:bg-obsidian-surface text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">ReactJS</span>
+                <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-surface dark:bg-obsidian-surface text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">GitHub Copilot</span>
+                <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-surface dark:bg-obsidian-surface text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">OpenAI Codex</span>
                 <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-surface dark:bg-obsidian-surface text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">Jenkins</span>
                 <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-surface dark:bg-obsidian-surface text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">Sidekiq</span>
                 <span class="px-2.5 py-1 rounded font-mono text-[11px] bg-paper-surface dark:bg-obsidian-surface text-paper-ink dark:text-obsidian-ink border border-paper-line dark:border-obsidian-line">AWS</span>
@@ -620,18 +815,18 @@
       </div>
     </section>
 
-    <!-- ==================== 03 / CONTACT & EDITORIAL FOOTER ==================== -->
+    <!-- ==================== 04 / CONTACT & EDITORIAL FOOTER ==================== -->
     <section id="contact-info" class="py-20 sm:py-28 scroll-mt-16">
       <div class="reveal space-y-12">
         <div class="space-y-4 max-w-2xl">
           <div class="font-mono text-xs uppercase tracking-widest text-paper-accent dark:text-obsidian-accent">
-            03 / Contact
+            04 / Contact
           </div>
           <h2 class="font-display text-4xl sm:text-5xl font-bold tracking-tight text-paper-ink dark:text-obsidian-ink">
             Let&apos;s build something resilient together.
           </h2>
           <p class="text-base sm:text-lg text-paper-muted dark:text-obsidian-muted">
-            Available for full-stack and backend engineering roles. Reach out directly via email or social profiles below.
+            Based in Madrid, Spain. Reach out directly via email or connect through my profiles below.
           </p>
         </div>
 
@@ -682,7 +877,7 @@
 
   <!-- Footer -->
   <footer class="max-w-6xl mx-auto px-5 sm:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs text-paper-muted dark:text-obsidian-muted">
-    <span>&copy; Patrick Minero &middot; Software Developer</span>
+    <span>&copy; Patrick Minero &middot; Software Developer in Madrid, Spain</span>
     <a href="#home" class="uppercase tracking-wider hover:text-paper-ink dark:hover:text-obsidian-ink transition-colors">
       Back to top &uarr;
     </a>
